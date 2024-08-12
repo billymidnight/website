@@ -10,22 +10,22 @@ body {
 header {
     position: relative;
     text-align: center;
-    padding: 20px;
+    padding: 2rem; /* Adjusted padding for better responsiveness */
     background: rgba(0, 0, 0, 0.7);
     color: white;
 }
 
 header h1 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5rem; /* Responsive font size */
 }
 
 .back-button {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 1rem;
+    left: 1rem;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
 }
 
@@ -43,12 +43,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 2rem; /* Adjusted padding */
     min-height: 80vh;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
 }
 
 .experience-section {
     width: 100%;
+    max-width: 1200px; /* Max width for better readability on large screens */
 }
 
 .parchment-container {
@@ -57,24 +59,24 @@ main {
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    padding: 40px;
-    width: 80%;
+    padding: 3rem; /* Adjusted padding for better spacing */
     margin: auto;
+    width: 100%; /* Ensures full width on smaller screens */
 }
 
 .laptop {
     position: absolute;
-    top: 10px;
-    width: 80px;
+    top: 1rem;
+    width: 50px; /* Adjusted size for responsiveness */
     transition: transform 0.3s ease;
 }
 
 .left-laptop {
-    left: 10px;
+    left: 1rem;
 }
 
 .right-laptop {
-    right: 55px;
+    right: 1rem;
 }
 
 .laptop:hover {
@@ -83,19 +85,19 @@ main {
 
 .parchment {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
+    padding: 2rem;
     border-radius: 10px;
     color: black;
 }
 
 .parchment h2 {
     font-family: 'Caveat', cursive;
-    font-size: 2em;
+    font-size: 1.8rem; /* Reduced size for better spacing */
     margin-top: 0;
 }
 
 .parchment p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-top: 0;
 }
 
@@ -106,7 +108,7 @@ main {
 
 .parchment ul li {
     margin: 10px 0;
-    font-size: 1.2em;
+    font-size: 1.1rem; /* Slightly smaller for better readability */
 }
 
 .project-link {
@@ -133,4 +135,27 @@ footer img.small-star {
     width: 10px;
     height: 10px;
     vertical-align: middle;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .parchment-container {
+        padding: 2rem;
+    }
+    
+    .parchment h2 {
+        font-size: 1.5rem;
+    }
+    
+    .parchment p, .parchment ul li {
+        font-size: 1rem;
+    }
+    
+    .laptop {
+        width: 40px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
 }

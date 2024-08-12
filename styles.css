@@ -1,0 +1,200 @@
+body {
+    background-image: url('mybg2.jpg');
+    background-size: cover;
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    color: white; /* This is the pure white font color for the header */
+    display: flex;
+    flex-direction: column; /* Stack the header elements vertically */
+    align-items: center; /* Center align the elements */
+    text-align: center;
+}
+
+.header-text {
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p.recruiting {
+    font-family: 'Caveat', cursive; /* Unique font */
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 20px; /* Position the nav items to the right */
+    top: 20px; /* Position the nav items to the top */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    transform: scale(1.2);
+    color: #ffcc00;
+}
+
+.hamburger {
+    font-size: 50px; /* Increased the size of the hamburger menu */
+    cursor: pointer;
+    position: absolute;
+    left: 20px; /* Position the hamburger menu to the left */
+    top: 20px; /* Position the hamburger menu to the top */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 80px; /* Increased space for dropdown */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 300px; /* Increased width of the dropdown box */
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 20px 24px; /* Increased padding for dropdown items */
+    text-decoration: none;
+    display: block;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+    color: black; /* Changed text color to black for better contrast with light yellow */
+    text-shadow: 2px 2px 4px rgba(24, 16, 16, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 10px;
+    background-image: url('wooden.jpg'); /* Use the wooden texture for the profile photo padding */
+    background-size: cover;
+    background-position: center;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-image: url('wooden.jpg'); /* Use the wooden texture for the slideshow padding */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0); /* Orange color for slideshow text */
+    font-family: 'Caveat', cursive; /* More artistic font */
+}
+
+.fade {
+    animation: fade 1.5s infinite;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%;
+}
+
+section {
+    margin: 40px 0;
+    width: 48%;
+    padding: 20px;
+    background-color: #f5f5dc; /* Light brown */
+    border-radius: 10px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+    color: darkred; /* Dark red color for section headings */
+    font-family: 'Lora', serif;
+}
+
+#skills ul, #skills p {
+    font-size: 1.8em; /* Increased font size for skills */
+    color: darkred; /* Dark red color for skills text */
+    font-family: 'Lora', serif;
+}
+
+#experience ul li a {
+    font-size: 1.5em; /* Larger font size for experience headings */
+    color: darkred; /* Dark red color for experience headings */
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+#experience ul li p {
+    font-size: 1.1em; /* Smaller font size for experience content */
+    color: darkslategray; /* Dark slate gray for experience content */
+    font-family: 'Lora', serif;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer #bottom-tagline {
+    font-size: 1.5em;
+}
+
+footer img.small-star {
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+}

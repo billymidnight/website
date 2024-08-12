@@ -1,0 +1,127 @@
+body {
+    background-image: url('workbg.jpg');
+    background-size: cover;
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.back-button a:hover {
+    color: #333;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+.experience-section {
+    width: 100%;
+}
+
+.parchment-container {
+    position: relative;
+    background-image: url('parchment.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+.clipart {
+    position: absolute;
+    top: 10px;
+    width: 80px;
+    transition: transform 0.3s ease;
+}
+
+.left-clipart {
+    left: 10px;
+}
+
+.right-clipart {
+    right: 55px;
+}
+
+.clipart:hover {
+    transform: scale(1.2);
+}
+
+.parchment {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+.parchment h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.parchment p {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.parchment ul {
+    list-style: none;
+    padding: 0;
+}
+
+.parchment ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer #bottom-tagline {
+    font-size: 1.5em;
+}
+
+footer img.small-star {
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+}

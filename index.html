@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pritesh MK - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="dropdown" class="dropdown-content">
+        <a href="experience.html">Projects</a>
+        <a href="work.html">Work Experience</a>
+        <a href="courses.html">Courses Taken</a>
+        <a href="#interests">Interests</a>
+    </div>  
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="header-text">
+            <h1>Pritesh MK</h1>
+            <p class="recruiting">Bachelor of Science in Computer Science and Data Science</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="mailto:your-email@example.com">Email</a></li>
+                <li><a href="https://github.com/billymidnight" target="_blank">GitHub</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <img src="unnamed1.jpg" alt="Your Photo" class="profile-photo">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <p>Striving to create large-scale impact through calculated risks and deployment of mathematics and computer science in all its power to build the tools of the future</p>
+                </div>
+                <div class="mySlides fade">
+                    <p>Avidly passionate about the intersection of computer science, probability and quantitative finance</p>
+                </div>
+                <div class="mySlides fade">
+                    <p>Torture the data and it will confess to everything</p>
+                </div>
+            </div>
+        </section>
+        <div class="content-container">
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Adept in Python</li>
+                    <li>Fluent in C++</li>
+                    <li>Proficient in SQL (Oracle, MySQL, Postgres)</li>
+                    <li>Adept in R</li>
+                    <li>Microsoft Visual Basic</li>
+                    <li>Git/GitHub</li>
+                    <li>Visual Studio Code</li>
+                    <li>PyTorch</li>
+                    <li>TensorFlow</li>
+                    <li>MongoDB</li>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Scikit-Learn</li>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                </ul>
+                <p>Areas: Exploratory Data Analysis, Machine Learning, Stochastic Models, Time Series Analysis, Statistical Arbitrage</p>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <ul>
+                    <li>
+                        <a href="#algo-trading-bot">Algorithmic Trading Bot | Python, C++, NumPy, Seaborn, MongoDB, Git, MySQL June 2024 - August 2024</a>
+                        <p>Engineered sophisticated strategies for mean reversion, momentum and arbitrage, by leveraging time series analysis. Developed a real-time interactive dashboard to monitor performance metrics and trading activity. Integrated risk management, incorporating dynamic stop-loss and take-profit thresholds to optimize outcomes.</p>
+                    </li>
+                    <li>
+                        <a href="#backend-sql">Backend Programming for SQL Interface | C++, Typescript, Javascript February 2022 – April 2022</a>
+                        <p>Developed an RDBMS emulator with an interface based on a subset of a standard query language. Updated the interface to accommodate indexing by using hash tables and BST.</p>
+                    </li>
+                    <li>
+                        <a href="#ai-poker-bot">AI Poker Bot | Python, RLCard, TensorFlow, Pytorch, NumPy, Postgre-SQL April 2024 - July 2024</a>
+                        <p>Deployed Q-learning to DQN agent on a poker engine to play GTO (game-theory optimal). Spearheaded the team to optimize agent through calculus-driven Nash equilibria, maximizing expected value.</p>
+                    </li>
+                    <li>
+                        <a href="#stock-exchange-simulator">Stock Exchange Simulator | Python, Flask, Javascript, Oracle, Plotly, Pandas, HTML/CSS April 2024 - July 2024</a>
+                        <p>Developed a dynamic trading simulator mimicking historical economic scenarios and stochastic modeling. Created a GBM-driven Python backend and custom market sentiments emulating realistic price volatility. Integrated user-interactive features for executing market trades, managing portfolio and reviewing performance.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p id="bottom-tagline">
+            MATH <img src="star.png" alt="*" class="small-star"> CODE <img src="star.png" alt="*" class="small-star"> RESULTS
+        </p>
+    </footer>
+    <!-- Adding JavaScript for toggle functionality and slideshow -->
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("dropdown");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 6000); // Change image every 6 seconds
+        }
+    </script>
+</body>
+</html>

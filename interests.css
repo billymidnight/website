@@ -103,8 +103,8 @@ main {
 }
 
 .stock-icon {
-    bottom: 20%;
-    left: 20%;
+    bottom: 10%;
+    left: 10%;
 }
 
 .card-icon {
@@ -123,7 +123,7 @@ main {
 }
 
 .dice-icon {
-    top: 15%;
+    top: 5%;
     left: 40%;
 }
 

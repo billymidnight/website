@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craps Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<body>
+    <div id="casino-bg">
+        <div id="header">
+            <div id="bankroll">Bankroll: $10000</div>
+            <div id="game-status">LOADING</div>
+            <div id="on-off">OFF</div>
+        </div>
+        <div id="main-content">
+            <div id="point-box">Point: -</div>
+            <div id="bet-type">
+                <button onclick="selectBetType('PASS LINE')">PASS LINE</button>
+                <button onclick="selectBetType('DON\'T PASS')">DON'T PASS BAR</button>
+            </div>
+            
+            <div id="console">
+                <p>PLACE YOUR BETS</p>
+                <p>How much would you like to place on the pass line?</p>
+                <input type="number" id="bet-amount" min="1">
+                <button onclick="placeBet()">Place Bet</button>
+                <button onclick="rollDice()">Roll Dice</button>
+                <button onclick="toggleGame()">Toggle Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

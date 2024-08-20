@@ -1,0 +1,135 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: url('casinobg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #FFF;
+}
+
+#bankroll {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    background: brown;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#game-status {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    padding: 10px 20px;
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+}
+
+#on-off {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    color: yellow;
+    font-weight: bold;
+    background: brown;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#main-content {
+    text-align: center;
+    margin-top: 120px;
+}
+
+#console {
+    background: brown;
+    color: white;
+    padding: 40px;
+    display: inline-block;
+    border-radius: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    max-width: 500px;
+}
+
+#point-box {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: brown;
+    padding: 20px;
+    color: yellow;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+input, button {
+    margin: 10px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background: #333;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #555;
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #FFF;
+    padding: 20px;
+    font-size: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#bet-type {
+    margin: 10px;
+}
+
+#bet-type button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
